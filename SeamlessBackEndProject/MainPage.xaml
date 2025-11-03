@@ -11,7 +11,7 @@
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+                SemanticProperties.Description="Placeholder image" />
 
             <Label
                 Text="Seamless"
@@ -22,13 +22,12 @@
                 Text="Outfit creation based on your needs"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                SemanticProperties.Description="Description/slogan of app" />
 
             <Button
                 x:Name="CounterBtn"
                 Text="Continue" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                SemanticProperties.Hint="Button to click to start the app"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
