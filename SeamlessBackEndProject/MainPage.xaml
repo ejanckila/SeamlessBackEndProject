@@ -4,32 +4,25 @@
              x:Class="SeamlessBackEndProject.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="Placeholder image" />
+        <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+            <Label Text="🌦 Seamless Weather"
+                   FontSize="28"
+                   HorizontalOptions="Center" />
 
-            <Label
-                Text="Seamless"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+            <Entry x:Name="CityEntry"
+                   Placeholder="Enter city name"
+                   FontSize="18" />
 
-            <Label
-                Text="Outfit creation based on your needs"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Description/slogan of app" />
+            <Button Text="Get Weather"
+                    Clicked="OnGetWeatherClicked"
+                    BackgroundColor="#007AFF"
+                    TextColor="White" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Continue" 
-                SemanticProperties.Hint="Button to click to start the app"
-                HorizontalOptions="Fill" />
+            <Label x:Name="WeatherLabel"
+                   FontSize="20"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   Text="Weather info will appear here." />
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

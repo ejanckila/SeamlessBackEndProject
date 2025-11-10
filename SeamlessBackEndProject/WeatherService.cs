@@ -8,7 +8,7 @@ namespace YourApp.Services
     public class WeatherService
     {
         private static readonly HttpClient client = new HttpClient();
-        private const string apiKey = "96e868353549c8ccc62eee780c732449"; // Replace with your OpenWeatherMap key
+        private const string apiKey = "96e868353549c8ccc62eee780c732449"; 
 
         // Fetch weather for a city in Fahrenheit
         public static async Task<WeatherInfo> GetWeatherAsync(string city)
